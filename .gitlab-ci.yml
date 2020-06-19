@@ -1,0 +1,21 @@
+# https://docs.gitlab.com/ee/ci/yaml/
+
+image: node:10.7-stretch
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  before_script:
+    - npm install 
+  script:
+    - npm run build
+  after_script:
+    - echo "build success"
+
+deploy:
+  stage: deploy
+  script: 
+    - node test.js    
