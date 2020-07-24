@@ -4,6 +4,7 @@
     <HelloWorld msg="test deployed???!!!11133"/>
     <div>1111</div>
     <div>2222</div>
+    <div>333</div>
   </div>
 </template>
 
